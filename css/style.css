@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    margin: 3px 68px;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#navbar ul li {
+    margin: -9px -15px;
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    margin: 3px 16px;
+    color: rgb(254 254 255);
+    border-radius: 15px;
+    display: block;
+    padding: 7px 17px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: blueviolet;
+    background-color: whitesmoke;
+}
+
+#logo {
+    margin: 11px 13px;
+}
+
+#logo img {
+    height: 38px;
+    width: 45px;
+    margin: -27px 10px; 
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 437px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(../bg2.jpeg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 494px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Tilt Warp', cursive;
+}
+
+/* Services Section */
+#services {
+    margin: 35px;
+    display: flex;
+
+}
+
+#services .Box {
+    border: 2px solid rgba(255, 0, 0, 0.645);
+    padding: 10px;
+    margin: 3px 36px;
+    border-radius: 23px;
+    background-color: #f2eded;
+}
+
+#services .Box img {
+    height: 90px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .Box p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn {
+    padding: 4px 20px;
+    margin: 14px;
+    border: 2px solid #f1dfdf;
+    background-color: thistle;
+    color: rgb(37, 18, 207);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* client section */
+#client-section {
+    position: relative;
+
+}
+
+#client-section::before {
+    content: "";
+    background: url(../bg1.jpeg);
+    height: 175px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img {
+    height: 121px;
+}
+
+.client-item {
+    padding: 10px;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(../contact.jpeg) no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+} 
+
+#contact-box form{
+    width: 35%;
+}
+
+#contact-box label{
+   font-size: 1rem;
+   font-family: 'Josefin Sans', sans-serif;
+
+}
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 3px 6px;
+}
+
+/* Utility Section */
+.center {
+    text-align: center;
+    font-family: 'Tilt Warp', cursive;
+}
+.center2 {
+    font-size: 0.7rem;
+    text-align: center;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.h-primary {
+    font-size: 2.7rem;
+    padding: 12px;
+
+}
+.h-secondary {
+    font-size: 1.1rem;
+    padding: 12px;
+}
